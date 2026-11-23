@@ -1,0 +1,29 @@
+/* MENU & KHUNG CHUNG – dùng cho cả 5 trang. Sửa ở đây là đổi toàn bộ website. */
+/* ===== menu chung (đồng bộ 5 trang) ===== */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--card);z-index:60}
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;display:block;max-width:none;margin:0;padding:0;background:var(--card);border-bottom:1px solid var(--line)}
+header.site .bar{display:flex;align-items:center;gap:16px;padding:8px 22px;max-width:1080px;margin:0 auto}
+header.site .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Noto Serif',serif;font-weight:800;color:var(--red);font-size:1.05rem;white-space:nowrap}
+header.site .brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;mix-blend-mode:multiply}
+
+header.site nav{margin-left:auto;display:flex;gap:2px;overflow:visible}
+header.site nav a{padding:8px 12px;border-radius:99px;text-decoration:none;font-size:.93rem;white-space:nowrap;font-weight:500;color:var(--fg)}
+header.site nav a:hover{background:var(--bg2)}
+header.site nav a[aria-current]{background:var(--gold-s);color:#3B2A22;font-weight:700}
+.menu-btn{display:none;margin-left:auto;width:44px;height:44px;align-items:center;justify-content:center;background:none;border:0;border-radius:12px;color:var(--red);cursor:pointer}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;content:"";width:22px;height:2.5px;background:currentColor;border-radius:2px;position:relative;transition:transform .2s,top .2s,background .2s}
+.menu-btn span::before{position:absolute;top:-7px}.menu-btn span::after{position:absolute;top:7px}
+header.site.open .menu-btn span{background:transparent}
+header.site.open .menu-btn span::before{top:0;transform:rotate(45deg)}
+header.site.open .menu-btn span::after{top:0;transform:rotate(-45deg)}
+@media (max-width:900px) and (min-width:721px){header.site .brand span{display:none}}
+@media (max-width:720px){
+header.site .bar{flex-wrap:wrap;gap:0 8px;padding:6px 16px}
+header.site .brand span{display:inline;font-size:1rem}
+.menu-btn{display:flex}
+header.site nav{display:none;width:100%;flex-direction:column;margin:0;padding:6px 0 10px;border-top:1px solid var(--line)}
+header.site.open nav{display:flex}
+header.site nav a{padding:13px 14px;border-radius:12px;font-size:1rem;white-space:normal}
+}
+img{max-width:100%}
+html{color-scheme:light}
