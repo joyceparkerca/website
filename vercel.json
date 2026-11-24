@@ -1,3 +1,4 @@
+
 {
   "cleanUrls": true,
   "trailingSlash": false,
@@ -23,6 +24,40 @@
           "value": "strict-origin-when-cross-origin"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/hsk1",
+      "destination": "https://trungvancantho-hsk1.vercel.app/"
+    },
+    {
+      "source": "/hsk1/:path*",
+      "destination": "https://trungvancantho-hsk1.vercel.app/:path*"
+    },
+    {
+      "source": "/hsk2",
+      "destination": "https://trungvancantho-hsk2.vercel.app/"
+    },
+    {
+      "source": "/hsk2/:path*",
+      "destination": "https://trungvancantho-hsk2.vercel.app/:path*"
+    },
+    {
+      "source": "/hsk31",
+      "destination": "https://trungvancantho-hsk31.vercel.app/"
+    },
+    {
+      "source": "/hsk31/:path*",
+      "destination": "https://trungvancantho-hsk31.vercel.app/:path*"
+    },
+    {
+      "source": "/hsk32",
+      "destination": "https://trungvancantho-hsk32.vercel.app/"
+    },
+    {
+      "source": "/hsk32/:path*",
+      "destination": "https://trungvancantho-hsk32.vercel.app/:path*"
     }
   ]
 }
