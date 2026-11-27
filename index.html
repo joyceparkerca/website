@@ -92,6 +92,44 @@ section{padding:48px 0}.brand span{display:none}
 .zalo{opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity .25s,transform .25s}
 .zalo.show{opacity:1;pointer-events:auto;transform:none}
 html{color-scheme:light}
+
+/* Nhãn ưu đãi cố định */ .offer-heading{position:relative;padding-right:190px;min-height:58px}.offer-fixed{position:absolute;right:0;top:0;display:inline-block;padding:9px 18px;border:1px solid #f0c8c3;border-radius:999px;background:#fff7f5;color:var(--red);font-size:.95rem;font-weight:700;white-space:nowrap}@media(max-width:700px){.offer-heading{padding-right:0;padding-top:48px;min-height:0}.offer-fixed{left:0;right:auto;top:0;font-size:.85rem;padding:7px 14px}}
+/* ƯU ĐÃI HỌC PHÍ */
+.offers{background:linear-gradient(180deg,#fffaf2 0%,#fff4e8 100%)}
+.offer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.offer-card{position:relative;overflow:hidden;padding:25px 24px 22px;background:#fff;border:1px solid #efd9c5;border-radius:20px;box-shadow:0 10px 28px #6b35200d;display:flex;flex-direction:column;min-height:330px}
+.offer-card:before{content:"";position:absolute;inset:0 0 auto;height:7px;background:linear-gradient(90deg,var(--red),#e6a44c)}
+.offer-award{background:linear-gradient(145deg,#fff 55%,#fff5df)}
+.offer-group{background:linear-gradient(145deg,#fff 55%,#fdf0e9)}
+.offer-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px}
+.offer-icon{font-size:2rem;line-height:1}
+.offer-tag{font-size:.78rem;font-weight:700;letter-spacing:.04em;color:var(--red-d);background:#fff0e8;padding:6px 11px;border-radius:99px}
+.offer-card h3{font-size:1.18rem;color:var(--fg);margin-bottom:8px}
+.offer-card p{font-size:.94rem;color:var(--mute);line-height:1.65}
+.offer-value{font-family:'Noto Serif','Be Vietnam Pro',serif;font-size:2.2rem;font-weight:800;line-height:1.2;color:var(--red);margin:5px 0 10px}
+.offer-value-small{font-size:1.65rem;white-space:nowrap}
+.offer-detail{margin-top:auto;padding-top:16px;border-top:1px dashed #e8c9b9;display:flex;flex-direction:column;gap:3px}
+.offer-detail b{font-size:.9rem;color:var(--red-d)}
+.offer-detail span{font-size:.84rem;color:var(--mute)}
+.offer-tiers{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.offer-tiers div{display:flex;flex-direction:column;gap:3px}
+.offer-note{margin-top:16px;font-size:.82rem;color:var(--mute)}
+/* GIỚI THIỆU HỆ THỐNG HỌC TẬP */
+.learning .head{max-width:48em}
+.eyebrow{display:inline-block;margin-bottom:10px;color:var(--red);font-size:.78rem;font-weight:800;letter-spacing:.1em}
+.learning-intro{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:0 0 28px}
+.learning-intro>div{padding:19px 20px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.learning-intro h3{font-size:1.04rem;color:var(--red-d);margin-bottom:7px}
+.learning-intro p{font-size:.91rem;color:var(--mute)}
+.learning-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+.learning-shot{margin:0;padding:12px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px #3b2a220b;overflow:hidden}
+.learning-shot img{display:block;width:100%;height:440px;object-fit:contain;object-position:top center;background:#f4faf8;border-radius:11px}
+.learning-shot figcaption{display:flex;flex-direction:column;gap:4px;padding:13px 5px 5px}
+.learning-shot figcaption b{color:var(--fg);font-size:.98rem}
+.learning-shot figcaption span{color:var(--mute);font-size:.86rem;line-height:1.55}
+.learning-foot{margin-top:17px;color:var(--mute);font-size:.88rem;text-align:center}
+@media(max-width:860px){.offer-grid,.learning-intro,.learning-gallery{grid-template-columns:1fr}.offer-card{min-height:0}.learning-shot{max-width:520px;width:100%;margin-inline:auto}.learning-shot img{height:auto;max-height:680px;object-fit:contain}.offer-value-small{white-space:normal}}
+
 </style>
 <link rel="icon" href="favicon.png" type="image/png"><meta name="theme-color" content="#B3362D">
 <link rel="stylesheet" href="assets/site.css">
@@ -142,6 +180,49 @@ html{color-scheme:light}
   <li><b>Hỗ trợ miễn phí các cuộc thi quốc tế</b>Giúp bạn rèn kỹ năng, làm đẹp hồ sơ du học và xin việc.</li>
   <li><b>Giới thiệu việc làm</b>Liên kết với nhiều doanh nghiệp Trung Quốc và Đài Loan tại Cần Thơ & TP. Hồ Chí Minh, ưu tiên đề cử hồ sơ học viên của trung tâm.</li>
  </ul>
+</div></section>
+
+
+<section id="uu-dai" class="offers"><div class="wrap">
+ <div class="head offer-heading"><span class="offer-fixed">Ưu đãi cố định</span><h2>Ưu đãi học phí dành cho học viên</h2><p>Trung tâm trân trọng sự nỗ lực, tin tưởng và đồng hành của mỗi học viên.</p></div>
+ <div class="offer-grid">
+  <article class="offer-card offer-award">
+   <div class="offer-top"><span class="offer-icon" aria-hidden="true">🏆</span><span class="offer-tag">Khuyến học</span></div>
+   <h3>Thưởng học viên xuất sắc</h3>
+   <p>Phần thưởng khuyến học dành cho học viên có thành tích học tập xuất sắc trong khóa.</p>
+   <div class="offer-detail"><b>Ghi nhận nỗ lực</b><span>Tiếp thêm động lực trên hành trình chinh phục tiếng Trung.</span></div>
+  </article>
+  <article class="offer-card">
+   <div class="offer-top"><span class="offer-icon" aria-hidden="true">🎁</span><span class="offer-tag">Giới thiệu bạn mới</span></div>
+   <h3>Rủ bạn cùng học</h3>
+   <div class="offer-value">50.000đ</div>
+   <p>Học viên giới thiệu bạn mới đăng ký khóa học thành công nhận 50.000đ/người.</p>
+   <div class="offer-detail"><b>Dành cho học viên giới thiệu</b><span>Nhận thưởng khi bạn mới đăng ký khóa học.</span></div>
+  </article>
+  <article class="offer-card offer-group">
+   <div class="offer-top"><span class="offer-icon" aria-hidden="true">👥</span><span class="offer-tag">Ưu đãi nhóm</span></div>
+   <h3>Đăng ký cùng bạn bè</h3>
+   <div class="offer-value offer-value-small">Giảm đến 100.000đ</div>
+   <p>Cả nhóm cùng đăng ký, mỗi học viên đều được giảm học phí.</p>
+   <div class="offer-detail offer-tiers"><div><b>Nhóm 2 bạn</b><span>Giảm 50.000đ/người</span></div><div><b>Nhóm từ 3 bạn</b><span>Giảm 100.000đ/người</span></div></div>
+  </article>
+ </div>
+ 
+</div></section>
+
+<section class="alt learning" id="he-thong-hoc"><div class="wrap">
+ <div class="head"><span class="eyebrow">CÔNG CỤ HỌC TẬP CỦA TRUNG TÂM</span><h2>Hệ thống học tiếng Trung trực tuyến</h2><p>Không chỉ học trên lớp, học viên còn có thể chủ động ôn luyện và thực hành trên hệ thống học tập riêng của Trung Văn Cần Thơ.</p></div>
+ <div class="learning-intro">
+  <div><h3>Bài học và bài tập được sắp xếp rõ ràng</h3><p>Mỗi khóa học có các bài học theo từng buổi. Học viên dễ dàng mở lại nội dung đã học và chọn phần bài tập để luyện thêm.</p></div>
+  <div><h3>Ôn từ vựng và luyện tập thường xuyên</h3><p>Hệ thống có nội dung ôn từ vựng theo cấp độ, bài tập mô phỏng dạng đề HSK và câu hỏi tương tác có hình ảnh.</p></div>
+  <div><h3>Rèn thêm kỹ năng ngoài giờ lên lớp</h3><p>Học viên có thể luyện viết chữ Hán theo thứ tự nét, thực hành giao tiếp và luyện nghe – nói với công cụ AI.</p></div>
+ </div>
+ <div class="learning-gallery">
+  <figure class="learning-shot"><img src="images/he-thong-hoc/tong-quan-khoa-hoc.webp" alt="Giao diện khóa học và nội dung ôn từ vựng của Trung Văn Cần Thơ" loading="lazy" width="1046" height="2048"><figcaption><b>Kho học liệu theo khóa</b><span>Ôn từ vựng, xem nội dung giao tiếp và truy cập bài học theo cấp độ.</span></figcaption></figure>
+  <figure class="learning-shot"><img src="images/he-thong-hoc/bai-hoc-theo-buoi.webp" alt="Danh sách bài học theo từng buổi trên hệ thống học tập" loading="lazy" width="969" height="2048"><figcaption><b>Bài học theo từng buổi</b><span>Chọn bài học hoặc làm bài tập tương ứng, thuận tiện tự ôn luyện.</span></figcaption></figure>
+  <figure class="learning-shot"><img src="images/he-thong-hoc/bai-tap-tuong-tac.webp" alt="Giao diện bài tập trắc nghiệm có hình ảnh trên hệ thống học tập" loading="lazy" width="965" height="2048"><figcaption><b>Bài tập mô phỏng HSK</b><span>Luyện tập với câu hỏi, hình ảnh và các lựa chọn tương tác.</span></figcaption></figure>
+ </div>
+ <p class="learning-foot">Hệ thống học tập là công cụ hỗ trợ ôn luyện thêm, kết hợp cùng các buổi học trực tiếp tại trung tâm.</p>
 </div></section>
 
 <section class="alt" id="hinh-anh"><div class="wrap">
